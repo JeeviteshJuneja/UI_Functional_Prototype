@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ui_functional_prototype.MainMenu"
+    tools:showIn="@layout/activity_main_menu">
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/drinks_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drinks"
+                android:background="?android:selectableItemBackground"
+                android:onClick="gotoDrinks"
+                />
+            <TextView
+                android:id="@+id/drinks_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinks"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/drinks_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21 choices"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="30dp"
+                android:layout_below="@id/drinks_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/soups_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/soups"
+                android:background="?android:selectableItemBackground"
+                android:onClick="gotoSoups"/>
+
+            <TextView
+                android:id="@+id/soups_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soups"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/soups_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 choices"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="30dp"
+                android:layout_below="@id/soups_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/appp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/appp_crop"
+                android:background="?android:selectableItemBackground"
+                android:onClick="gotoAppp"/>
+            <TextView
+                android:id="@+id/appp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appetizers"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/appp_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 choices"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="30dp"
+                android:layout_below="@id/appp_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/entree_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/entree_crop"
+                android:background="?android:selectableItemBackground"
+                />
+            <TextView
+                android:id="@+id/entree_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinks"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/entree_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 choices"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="30dp"
+                android:layout_below="@id/entree_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/dessert_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dessert"
+                android:background="?android:selectableItemBackground"/>
+            <TextView
+                android:id="@+id/dessert_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desserts"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/dessert_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 choices"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="30dp"
+                android:layout_below="@id/dessert_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
