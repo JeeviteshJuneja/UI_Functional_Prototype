@@ -133,12 +133,12 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/entree_crop"
                 android:background="?android:selectableItemBackground"
-                />
+                android:onClick="gotoEntree"/>
             <TextView
                 android:id="@+id/entree_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drinks"
+                android:text="Entrees"
                 android:textColor="@android:color/white"
                 android:textSize="32sp"
                 android:paddingLeft="30dp"
@@ -166,7 +166,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/dessert"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:onClick="gotoDessert"/>
             <TextView
                 android:id="@+id/dessert_text"
                 android:layout_width="wrap_content"
