@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:contentScrim="#655582"
-            app:expandedTitleTextAppearance=""
+
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
             <ImageView
                 app:layout_collapseMode="parallax"
