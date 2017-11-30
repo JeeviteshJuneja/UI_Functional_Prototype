@@ -24,16 +24,120 @@
             <Button
                 android:id="@+id/dish1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="?android:selectableItemBackground"
-                android:drawableLeft="@drawable/dish1"/>
-            <!--<ImageView
-                android:layout_width="111dp"
-                android:layout_height="75dp"
-                android:src="@drawable/dish1"/>-->
+                android:drawableLeft="@drawable/dish1"
+
+                android:text="Beef Steak
+$18.5"
+                android:textAlignment="gravity"
+                android:gravity="center|left"
+                android:drawablePadding="15dp"
+                android:textAllCaps="false"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/dish1"
+                />
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dish2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/dish2"
 
+                android:text="Beef Steak
+$18.5"
+                android:textAlignment="gravity"
+                android:gravity="center|left"
+                android:drawablePadding="15dp"
+                android:textAllCaps="false"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/dish2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dish3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/dish3"
 
+                android:text="Beef Steak
+$18.5"
+                android:textAlignment="gravity"
+                android:gravity="center|left"
+                android:drawablePadding="15dp"
+                android:textAllCaps="false"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/dish3"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dish4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/dish4"
+
+                android:text="Beef Steak
+$18.5"
+                android:textAlignment="gravity"
+                android:gravity="center|left"
+                android:drawablePadding="15dp"
+                android:textAllCaps="false"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/dish4"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dish5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/dish5"
+
+                android:text="Beef Steak
+$18.5"
+                android:textAlignment="gravity"
+                android:gravity="center|left"
+                android:drawablePadding="15dp"
+                android:textAllCaps="false"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/dish5"
+                />
+        </RelativeLayout>
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
