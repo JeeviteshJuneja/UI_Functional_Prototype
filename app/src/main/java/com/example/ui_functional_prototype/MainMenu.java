@@ -43,7 +43,7 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, EntreeMenue.class);
         startActivity(intent);
     }
-    public void gotodessert(View view){
+    public void gotoDessert(View view){
         Intent intent = new Intent(this, EntreeMenue.class);
         startActivity(intent);
     }

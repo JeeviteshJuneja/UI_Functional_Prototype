@@ -47,6 +47,7 @@
         android:onClick="gotocheckout"
         android:background="?android:selectableItemBackground"
         android:src="@drawable/cart"
+
         />
     <!--<android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
