@@ -8,10 +8,32 @@
     tools:context="com.example.ui_functional_prototype.EntreeMenue"
     tools:showIn="@layout/activity_entree_menue">
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:text="@string/large_text" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dish1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/dish1"/>
+            <!--<ImageView
+                android:layout_width="111dp"
+                android:layout_height="75dp"
+                android:src="@drawable/dish1"/>-->
+        </RelativeLayout>
+
+
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
