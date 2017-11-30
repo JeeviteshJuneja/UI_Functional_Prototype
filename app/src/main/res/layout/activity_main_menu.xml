@@ -39,14 +39,21 @@
 
     <include layout="@layout/content_main_menu"
         android:id="@+id/include" />
-    <ImageButton
-        android:id="@+id/cartButton"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
-        android:background="?android:selectableItemBackground"
-        android:src="@drawable/cart"
-        />
+        android:clickable="true"
+        android:onClick="gotocheckout">
+        <ImageView
+            android:id="@+id/cartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/cart"
+            />
+    </RelativeLayout>
     <!--<android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

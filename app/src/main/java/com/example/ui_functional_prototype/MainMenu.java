@@ -47,4 +47,8 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, EntreeMenue.class);
         startActivity(intent);
     }
+    public void gotocheckout(View view){
+        Intent intent = new Intent(this, paymentmethod.class);
+        startActivity(intent);
+    }
 }
