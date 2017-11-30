@@ -35,7 +35,16 @@
                 android:value="com.example.ui_functional_prototype.MainMenu" />
         </activity>
         <activity android:name=".paymentmethod" />
-        <activity android:name=".pay"></activity>
+        <activity android:name=".pay" />
+        <activity
+            android:name=".BeefSteak"
+            android:label="@string/title_activity_beef_steak"
+            android:parentActivityName=".EntreeMenue"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ui_functional_prototype.EntreeMenue" />
+        </activity>
     </application>
 
 </manifest>
