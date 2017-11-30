@@ -29,11 +29,12 @@
                 android:drawableLeft="@drawable/dish1"
 
                 android:text="Beef Steak
-$18.5"
+$18.50"
                 android:textAlignment="gravity"
                 android:gravity="center|left"
                 android:drawablePadding="15dp"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false"
+                android:onClick="gotoBeefSteak"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,8 +53,8 @@ $18.5"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/dish2"
 
-                android:text="Beef Steak
-$18.5"
+                android:text="Beef Fries
+$12.80"
                 android:textAlignment="gravity"
                 android:gravity="center|left"
                 android:drawablePadding="15dp"
@@ -76,8 +77,8 @@ $18.5"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/dish3"
 
-                android:text="Beef Steak
-$18.5"
+                android:text="Beef Curry
+$11.80"
                 android:textAlignment="gravity"
                 android:gravity="center|left"
                 android:drawablePadding="15dp"
@@ -100,8 +101,8 @@ $18.5"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/dish4"
 
-                android:text="Beef Steak
-$18.5"
+                android:text="Chicken BBQ
+$10.5"
                 android:textAlignment="gravity"
                 android:gravity="center|left"
                 android:drawablePadding="15dp"
@@ -124,8 +125,8 @@ $18.5"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/dish5"
 
-                android:text="Beef Steak
-$18.5"
+                android:text="Roast Chicken
+$14.5"
                 android:textAlignment="gravity"
                 android:gravity="center|left"
                 android:drawablePadding="15dp"
