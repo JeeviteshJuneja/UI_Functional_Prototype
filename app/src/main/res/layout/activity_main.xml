@@ -25,7 +25,15 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight= "1"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:text="Scan"
+            android:layout_marginRight="25dp"/>
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
