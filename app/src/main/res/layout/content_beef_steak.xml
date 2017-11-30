@@ -8,10 +8,70 @@
     tools:context="com.example.ui_functional_prototype.BeefSteak"
     tools:showIn="@layout/activity_beef_steak">
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:text="@string/large_text" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $18.50"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description of this dish includes a list of the major ingriedients and if any sides are included / can be added"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/side_prompt"
+            android:paddingLeft="30dp"></Spinner>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:hint="Add Request"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/pay"
+                android:id="@+id/imageView2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="Pay now"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/imageView2"
+                android:layout_alignEnd="@+id/imageView2"
+                android:layout_marginRight="38dp"
+                android:layout_marginEnd="38dp" />
+        </RelativeLayout>
 
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

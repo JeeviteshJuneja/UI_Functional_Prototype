@@ -93,4 +93,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_entree_menue">Entrees</string>
     <string name="title_activity_beef_steak">Beef Steak</string>
+    <string name="side_prompt">Choose Side</string>
 </resources>
