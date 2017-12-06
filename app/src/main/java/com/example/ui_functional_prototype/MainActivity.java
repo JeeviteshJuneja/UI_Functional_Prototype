@@ -37,6 +37,8 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 import static android.Manifest.permission.CAMERA;
 
+
+
 public class MainActivity extends AppCompatActivity{
     View barcodeResult;
     private static final int MY_CAMERA_PERMISSON = 1;
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity{
 
         setContentView(R.layout.activity_main);
         scanBarcode(barcodeResult);
-
+        MySingletonClass.getInstance().setValue(false);
     }
 
     @Override

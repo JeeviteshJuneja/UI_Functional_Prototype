@@ -56,7 +56,9 @@
                 android:paddingLeft="30dp"
                 android:paddingTop="10dp"
                 android:src="@drawable/pay"
-                android:id="@+id/imageView2" />
+                android:id="@+id/imageView2"
+                android:clickable="true"
+                android:onClick="setCart"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

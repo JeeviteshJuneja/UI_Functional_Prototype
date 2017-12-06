@@ -28,7 +28,16 @@ public class BeefSteak extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public void gotocheckout(View view){
-        Intent intent = new Intent(this, paymentmethod.class);
-        startActivity(intent);
+        if(MySingletonClass.getInstance().getValue() == true) {
+            Intent intent = new Intent(this, ViewCart.class);
+            startActivity(intent);
+        }
+        else {
+            Intent intent = new Intent(this, EmptyCart.class);
+            startActivity(intent);
+        }
+    }
+    public void setCart(View view){
+        MySingletonClass.getInstance().setValue(true);
     }
 }

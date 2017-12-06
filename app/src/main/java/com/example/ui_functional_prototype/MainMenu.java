@@ -48,7 +48,13 @@ public class MainMenu extends AppCompatActivity {
         startActivity(intent);
     }
     public void gotocheckout(View view){
-        Intent intent = new Intent(this, paymentmethod.class);
-        startActivity(intent);
+        if(MySingletonClass.getInstance().getValue() == true) {
+            Intent intent = new Intent(this, ViewCart.class);
+            startActivity(intent);
+        }
+        else {
+            Intent intent = new Intent(this, EmptyCart.class);
+            startActivity(intent);
+        }
     }
 }
