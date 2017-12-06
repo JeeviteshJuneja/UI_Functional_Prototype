@@ -52,6 +52,12 @@ public class barcodescanner extends Activity {
         initCamera();
 
     }
+    
+    public void next(View v) {
+        Intent intent = new Intent(this, MainMenu.class);
+        startActivity(intent);
+    }
+
     private void initCamera()
     {
         BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(this).build();

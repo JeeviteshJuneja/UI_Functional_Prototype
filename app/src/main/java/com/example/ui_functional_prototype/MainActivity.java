@@ -47,16 +47,24 @@ public class MainActivity extends AppCompatActivity{
 
         setContentView(R.layout.activity_main);
         scanBarcode(barcodeResult);
+
     }
 
     @Override
     public void onResume() {
-        super.onResume(); AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        super.onResume();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("No Valid QR Code Detected");
         builder.setPositiveButton("Scan Again", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 scanBarcode(barcodeResult);
+            }
+        });
+        builder.setNegativeButton("Next(Test/Demo)", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                next(barcodeResult);
             }
         });
         AlertDialog alert1 = builder.create();
@@ -65,6 +73,10 @@ public class MainActivity extends AppCompatActivity{
     public void scanBarcode(View v){
         Intent intent = new Intent(this, barcodescanner.class);
         startActivityForResult(intent, 0 );
+    }
+    public void next(View v){
+        Intent intent = new Intent(this, MainMenu.class);
+        startActivity(intent);
     }
 
     @Override
