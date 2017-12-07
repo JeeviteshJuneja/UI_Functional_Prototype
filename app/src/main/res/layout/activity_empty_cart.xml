@@ -30,5 +30,7 @@
         android:layout_height="match_parent"
         android:text="Cart Is Empty"
         android:gravity="center"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:clickable="true"
+        android:onClick="gotoMainMenu"/>
 </android.support.constraint.ConstraintLayout>

@@ -64,6 +64,12 @@
                 android:layout_height="match_parent"
                 android:id="@+id/np"
                 android:gravity="right"></NumberPicker>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cross"
+                android:background="@android:color/transparent"
+                android:onClick="gotoEmpty"/>
         </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -86,6 +92,7 @@
                 android:textAllCaps="true"/>
 
         </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

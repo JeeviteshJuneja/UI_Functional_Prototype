@@ -27,6 +27,11 @@ public class ViewCart extends AppCompatActivity {
         Intent intent = new Intent(this, paymentmethod.class);
         startActivity(intent);
     }
+    public void gotoEmpty(View view) {
+        MySingletonClass.getInstance().setValue(false);
+        Intent intent = new Intent(this, EmptyCart.class);
+        startActivity(intent);
+    }
     public void back(View view) {
         Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
